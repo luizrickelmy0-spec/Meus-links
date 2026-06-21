@@ -1,137 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>@Lz.Szxz - Servidores Roblox</title>
+<title>@Lz.Szxz</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
 
 body{
-    font-family:'Segoe UI', Arial, sans-serif;
-    background:linear-gradient(135deg,#050505,#22003d,#4b0082);
-    min-height:100vh;
+    margin:0;
+    padding:20px;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#0f0f0f,#4b0082);
     color:white;
     text-align:center;
-    padding:30px 15px;
 }
 
-.perfil{
-    margin-bottom:35px;
+.container{
+    max-width:600px;
+    margin:auto;
+}
+
+.top{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
 }
 
 .avatar{
-    width:130px;
-    height:130px;
+    width:120px;
+    height:120px;
     border-radius:50%;
-    border:4px solid #a855f7;
-    box-shadow:0 0 30px #a855f7;
     object-fit:cover;
-    background:#111;
+    border:3px solid #b14cff;
+
+    box-shadow:
+    0 0 15px #b14cff,
+    0 0 30px #b14cff;
 }
 
-.nome{
-    margin-top:15px;
-    font-size:42px;
-    font-weight:bold;
-}
-
-.sub{
-    color:#d1d5db;
-    margin-top:5px;
+.username{
+    margin-top:10px;
+    margin-bottom:25px;
+    font-size:32px;
 }
 
 .card{
-    max-width:600px;
-    margin:25px auto;
     background:rgba(255,255,255,0.08);
-    border-radius:25px;
-    padding:25px;
-    backdrop-filter:blur(15px);
-    border:1px solid rgba(255,255,255,0.1);
-    box-shadow:0 0 25px rgba(168,85,247,.35);
-}
-
-.card h2{
-    margin-bottom:10px;
-    font-size:30px;
-}
-
-.players{
-    color:#00ff99;
-    font-weight:bold;
-    margin-bottom:18px;
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:20px;
+    margin-bottom:25px;
 }
 
 .botao{
     display:block;
+    margin:10px 0;
+    padding:15px;
     text-decoration:none;
-    background:linear-gradient(90deg,#00b06b,#00d27f);
     color:white;
-    padding:16px;
-    margin:12px 0;
-    border-radius:15px;
-    font-size:18px;
     font-weight:bold;
-    transition:.3s;
+    border-radius:12px;
+    background:rgba(255,255,255,0.1);
+    transition:0.3s;
 }
 
 .botao:hover{
-    transform:translateY(-4px);
-    box-shadow:0 0 25px #00ff99;
+    transform:scale(1.03);
+    background:rgba(255,255,255,0.2);
 }
 
-.footer{
-    margin-top:30px;
-    color:#aaa;
-    font-size:14px;
+.ad-small{
+    width:90px;
+    height:90px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,0.08);
+
+    border:2px solid #b14cff;
+
+    animation:glow 2s infinite alternate;
+
+    box-shadow:
+    0 0 10px #b14cff,
+    0 0 20px #b14cff;
 }
+
+.ad-box{
+    margin:25px 0;
+    padding:25px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    border:2px solid #b14cff;
+
+    animation:glow 2s infinite alternate;
+
+    box-shadow:
+    0 0 10px #b14cff,
+    0 0 20px #b14cff,
+    0 0 40px #b14cff;
+}
+
+@keyframes glow{
+
+    from{
+        box-shadow:
+        0 0 10px #b14cff,
+        0 0 20px #b14cff;
+    }
+
+    to{
+        box-shadow:
+        0 0 20px #b14cff,
+        0 0 40px #b14cff,
+        0 0 60px #b14cff;
+    }
+
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="perfil">
-    <img class="avatar" src="avatar.png" alt="Avatar">
-    <div class="nome">@Lz.Szxz</div>
-    <div class="sub">🚀 Servidores Privados Roblox</div>
+<div class="container">
+
+<div class="top">
+
+<div class="ad-small">
+📢
+</div>
+
+<img src="avatar.png" class="avatar">
+
+<div class="ad-small">
+📢
+</div>
+
+</div>
+
+<h1 class="username">@Lz.Szxz</h1>
+
+<div class="card">
+
+<h2>🌱 GROW A GARDEN 2</h2>
+
+<a href="#" class="botao">🌸 SERVER 1</a>
+<a href="#" class="botao">🌸 SERVER 2</a>
+<a href="#" class="botao">🌸 SERVER 3</a>
+
+</div>
+
+<div class="ad-box">
+📢 ESPAÇO PUBLICITÁRIO
 </div>
 
 <div class="card">
-    <h2>🌱 Grow a Garden 2</h2>
-    <p class="players">👥 Players Online: 0</p>
 
-    <a class="botao" href="https://www.roblox.com/share?code=b0e9dd16ec77fa4d83bf593c0dafd871&type=Server" target="_blank">Server 1</a>
-    <a class="botao" href="https://www.roblox.com/share?code=f2edd9fb4fe7654fb0cc97ccccfbf732&type=Server" target="_blank">Server 2</a>
-    <a class="botao" href="https://www.roblox.com/share?code=418e7663b7fa614880aed82485b58030&type=Server" target="_blank">Server 3</a>
+<h2>🍎 BLOX FRUITS</h2>
+
+<a href="#" class="botao">🔥 SERVER 1</a>
+<a href="#" class="botao">🔥 SERVER 2</a>
+
+</div>
+
+<div class="ad-box">
+📢 ESPAÇO PUBLICITÁRIO
 </div>
 
 <div class="card">
-    <h2>🍎 Blox Fruits</h2>
-    <p class="players">👥 Players Online: 0</p>
 
-    <a class="botao" href="https://www.roblox.com/share?code=32b31cb8a4404640a8344286bc229bc3&type=Server" target="_blank">Server 1</a>
-    <a class="botao" href="https://www.roblox.com/share?code=2c6202402aef81419b9d4e3dcc4abfee&type=Server" target="_blank">Server 2</a>
-    <a class="botao" href="https://www.roblox.com/share?code=18ba51c62f25de4ab9974c8b4c357357&type=Server" target="_blank">Server 3</a>
+<h2>🧠 STEAL A BRAINROT</h2>
+
+<a href="#" class="botao">⚡ SERVER 1</a>
+<a href="#" class="botao">⚡ SERVER 2</a>
+<a href="#" class="botao">⚡ SERVER 3</a>
+
 </div>
 
-<div class="card">
-    <h2>🧠 Steal a Brainrot</h2>
-    <p class="players">👥 Players Online: 0</p>
-
-    <a class="botao" href="https://www.roblox.com/share?code=20b7d72b65f0dc46be35a3fe4c86d5d1&type=Server" target="_blank">Server 1</a>
-    <a class="botao" href="https://www.roblox.com/share?code=e6e01c07c60a6840b5368aaf0d0da2c5&type=Server" target="_blank">Server 2</a>
-    <a class="botao" href="https://www.roblox.com/share?code=ba045fcc7fd83e488cca07f7ff37802f&type=Server" target="_blank">Server 3</a>
+<div class="ad-box">
+📢 ESPAÇO PUBLICITÁRIO
 </div>
 
-<div class="footer">
-    © 2026 • @Lz.Szxz Deus e Fiel!
+<p>© 2026 @Lz.Szxz</p>
+
 </div>
 
 </body>
